@@ -1,5 +1,5 @@
-variable "api_key" {
-  description = "API key for linuxpatch.com"
+variable "lp_key" {
+  description = "Customer key for linuxpatch.com"
   type        = string
 }
 

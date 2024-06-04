@@ -28,7 +28,7 @@ resource "null_resource" "run_install_script" {
 
     inline = [
       "bash /tmp/install_script.sh",
-      "API_KEY=${var.api_key} /tmp/install.sh",
+      "LP_KEY=${var.lp_key} /tmp/install.sh",
     ]
   }
 

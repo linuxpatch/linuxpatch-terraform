@@ -8,12 +8,12 @@ This Terraform module automates the process of downloading, executing, and clean
 
 - Terraform installed on the control node.
 - SSH access to the target host.
-- API key for [linuxpatch.com](https://linuxpatch.com).
+- LinuxPatch key for [linuxpatch.com](https://linuxpatch.com).
 - SSH private key for authentication.
 
 ## Variables
 
-- `api_key`: The API key required for the script execution. You should replace the placeholder with your actual API key.
+- `lp_key`: The API key required for the script execution. You should replace the placeholder with your actual API key.
 - `target_host`: The target host where the script will be executed.
 
 ## Usage
@@ -24,7 +24,7 @@ This Terraform module automates the process of downloading, executing, and clean
 
 2. **Set up the variables**:
 
-   Open `variables.tf` and define the variables `api_key` and `target_host`.
+   Open `variables.tf` and define the variables `lp_key` and `target_host`.
 
 3. **Run Terraform Init**:
 
